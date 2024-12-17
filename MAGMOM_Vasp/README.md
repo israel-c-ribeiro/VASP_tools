@@ -1,35 +1,35 @@
-# 📄 Script para Conversão de Momentos Magnéticos para VASP  
 
-**Autor:** Israel C. Ribeiro  
-**Inspirado por:** João H. Mazo  
+# 📄 Script for Converting Magnetic Moments for VASP
 
----
-
-## 📋 Descrição  
-Script Python para extrair os momentos magnéticos da última etapa iônica do **OUTCAR** e gerar o formato **MAGMOM** compatível com o VASP.  
+**Author:** Israel C. Ribeiro  
+**Inspired by:** João H. Mazo  
 
 ---
 
-## 🔧 Funcionalidades  
-- Leitura automática do número de íons (**NIONS**) no **OUTCAR**.  
-- Extração dos momentos magnéticos finais.  
-- Geração do arquivo **MAGMOM** no formato correto.  
+## 📋 Description  
+Python script to extract magnetic moments from the final ionic step of **OUTCAR** and generate the **MAGMOM** format compatible with VASP.
 
 ---
 
-## 🚀 Como Usar  
-1. Salve o script como `convert_magmoms.py`.  
-2. Coloque o arquivo `OUTCAR` no mesmo diretório.  
-3. Execute no terminal:  
+## 🔧 Features  
+- Automatic reading of the number of ions (**NIONS**) in the **OUTCAR**.  
+- Extraction of the final magnetic moments.  
+- Generation of the **MAGMOM** file in the correct format.
+
+---
+
+## 🚀 How to Use  
+1. Save the script as `convert_magmoms.py`.  
+2. Place the `OUTCAR` file in the same directory.  
+3. Run in the terminal:  
    ```bash
    python3 convert_magmoms.py
    ```
-4. O arquivo `MAGMOM` será gerado.  
+4. The `MAGMOM` file will be generated.
 
 ---
 
-## 📧 Contato  
-Dúvidas ou sugestões: [israelribeiroc7@gmail.com](mailto:israelribeiroc7@gmail.com).  
+## 📧 Contact  
+For questions or suggestions: [israelribeiroc7@gmail.com](mailto:israelribeiroc7@gmail.com).
 
 ---
-
