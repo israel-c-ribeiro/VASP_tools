@@ -1,7 +1,7 @@
 # 📄 Script para Conversão de Momentos Magnéticos para VASP  
 
 **Autor:** Israel C. Ribeiro  
-**Inspirado por:** João Mazo  
+**Inspirado por:** João H. Mazo  
 
 ---
 
