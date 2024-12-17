@@ -19,11 +19,11 @@ Python script to extract magnetic moments from the final ionic step of **OUTCAR*
 ---
 
 ## 🚀 How to Use  
-1. Save the script as `convert_magmoms.py`.  
+1. Save the script as `magmom_input.py`.  
 2. Place the `OUTCAR` file in the same directory.  
 3. Run in the terminal:  
    ```bash
-   python3 convert_magmoms.py
+   python3 magmom_input.py
    ```
 4. The `MAGMOM` file will be generated.
 
