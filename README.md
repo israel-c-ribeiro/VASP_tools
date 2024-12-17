@@ -39,7 +39,8 @@ pip install numpy matplotlib ase pandas
 3. Each script comes with detailed comments and instructions for usage. For more specific instructions, refer to the script-level documentation.  
 
 ## Scripts List  
-- **`center_vacum.py`**: Create a vaccum thickness and put slab at the center of simulation box.  
+- **`center_vacum.py`**: Create a vaccum thickness and put slab at the center of simulation box.
+- **`magmom_imput.py`**: Generate magnetic moments from the last ionic stage of OUTCAR.  
    
 
 More scripts will be added over time to expand functionality!  
