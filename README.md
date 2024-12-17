@@ -28,7 +28,7 @@ pip install numpy matplotlib ase pandas
 ## How to Use  
 1. Clone the repository to your local machine:  
    ```bash
-   git clone https://github.com/your-username/VASP_tools.git
+   git clone https://github.com/israel-c-ribeiro/VASP_tools.git
    ```  
 
 2. Navigate to the desired script's directory and run the script with appropriate input files:  
