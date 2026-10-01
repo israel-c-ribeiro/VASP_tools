@@ -1,0 +1,315 @@
+ vasp.6.4.1 synthetic OUTCAR (written by VASP_tools/examples/synthetic_vasp.py)
+   number of dos      NEDOS =    301   number of ions     NIONS =     21
+   NBANDS=      20
+   NSW    =    100    number of steps for IOM
+   IBRION =      2    ionic relax: 0-MD 1-quasi-New 2-CG
+   ISIF   =      2    stress and relaxation
+   EDIFFG = -2.0E-02   stopping-criterion for IOM
+   EDIFF  = 0.1E-05   stopping-criterion for ELM
+   LSORBIT =      F    spin-orbit coupling
+  volume of cell :      1190.70
+---------------------------------------- Ionic step 1 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.00000000 eV
+  energy  without entropy=      -139.99900000  energy(sigma->0) =      -139.99950000
+---------------------------------------- Ionic step 2 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.04758129 eV
+  energy  without entropy=      -140.04658129  energy(sigma->0) =      -140.04708129
+---------------------------------------- Ionic step 3 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.09063462 eV
+  energy  without entropy=      -140.08963462  energy(sigma->0) =      -140.09013462
+---------------------------------------- Ionic step 4 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.12959089 eV
+  energy  without entropy=      -140.12859089  energy(sigma->0) =      -140.12909089
+---------------------------------------- Ionic step 5 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.16483998 eV
+  energy  without entropy=      -140.16383998  energy(sigma->0) =      -140.16433998
+---------------------------------------- Ionic step 6 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.19673467 eV
+  energy  without entropy=      -140.19573467  energy(sigma->0) =      -140.19623467
+---------------------------------------- Ionic step 7 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.22559418 eV
+  energy  without entropy=      -140.22459418  energy(sigma->0) =      -140.22509418
+---------------------------------------- Ionic step 8 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.25170735 eV
+  energy  without entropy=      -140.25070735  energy(sigma->0) =      -140.25120735
+---------------------------------------- Ionic step 9 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.27533552 eV
+  energy  without entropy=      -140.27433552  energy(sigma->0) =      -140.27483552
+---------------------------------------- Ionic step 10 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.29671517 eV
+  energy  without entropy=      -140.29571517  energy(sigma->0) =      -140.29621517
+---------------------------------------- Ionic step 11 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.31606028 eV
+  energy  without entropy=      -140.31506028  energy(sigma->0) =      -140.31556028
+---------------------------------------- Ionic step 12 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.33356446 eV
+  energy  without entropy=      -140.33256446  energy(sigma->0) =      -140.33306446
+---------------------------------------- Ionic step 13 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.34940289 eV
+  energy  without entropy=      -140.34840289  energy(sigma->0) =      -140.34890289
+---------------------------------------- Ionic step 14 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.36373410 eV
+  energy  without entropy=      -140.36273410  energy(sigma->0) =      -140.36323410
+---------------------------------------- Ionic step 15 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.37670152 eV
+  energy  without entropy=      -140.37570152  energy(sigma->0) =      -140.37620152
+---------------------------------------- Ionic step 16 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.38843492 eV
+  energy  without entropy=      -140.38743492  energy(sigma->0) =      -140.38793492
+---------------------------------------- Ionic step 17 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.39905174 eV
+  energy  without entropy=      -140.39805174  energy(sigma->0) =      -140.39855174
+---------------------------------------- Ionic step 18 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.40865824 eV
+  energy  without entropy=      -140.40765824  energy(sigma->0) =      -140.40815824
+---------------------------------------- Ionic step 19 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.41735056 eV
+  energy  without entropy=      -140.41635056  energy(sigma->0) =      -140.41685056
+---------------------------------------- Ionic step 20 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.42521569 eV
+  energy  without entropy=      -140.42421569  energy(sigma->0) =      -140.42471569
+---------------------------------------- Ionic step 21 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.43233236 eV
+  energy  without entropy=      -140.43133236  energy(sigma->0) =      -140.43183236
+---------------------------------------- Ionic step 22 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.43877179 eV
+  energy  without entropy=      -140.43777179  energy(sigma->0) =      -140.43827179
+---------------------------------------- Ionic step 23 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.44459842 eV
+  energy  without entropy=      -140.44359842  energy(sigma->0) =      -140.44409842
+---------------------------------------- Ionic step 24 ----------------------------------------
+------------------------ aborting loop EDIFF was not reached (unconverged)  ----------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.44987058 eV
+  energy  without entropy=      -140.44887058  energy(sigma->0) =      -140.44937058
+---------------------------------------- Ionic step 25 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.45464102 eV
+  energy  without entropy=      -140.45364102  energy(sigma->0) =      -140.45414102
+---------------------------------------- Ionic step 26 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.45895750 eV
+  energy  without entropy=      -140.45795750  energy(sigma->0) =      -140.45845750
+---------------------------------------- Ionic step 27 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.46286321 eV
+  energy  without entropy=      -140.46186321  energy(sigma->0) =      -140.46236321
+---------------------------------------- Ionic step 28 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.46639724 eV
+  energy  without entropy=      -140.46539724  energy(sigma->0) =      -140.46589724
+---------------------------------------- Ionic step 29 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.46959497 eV
+  energy  without entropy=      -140.46859497  energy(sigma->0) =      -140.46909497
+---------------------------------------- Ionic step 30 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.47248839 eV
+  energy  without entropy=      -140.47148839  energy(sigma->0) =      -140.47198839
+---------------------------------------- Ionic step 31 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.47510647 eV
+  energy  without entropy=      -140.47410647  energy(sigma->0) =      -140.47460647
+---------------------------------------- Ionic step 32 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.47747540 eV
+  energy  without entropy=      -140.47647540  energy(sigma->0) =      -140.47697540
+---------------------------------------- Ionic step 33 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.47961890 eV
+  energy  without entropy=      -140.47861890  energy(sigma->0) =      -140.47911890
+---------------------------------------- Ionic step 34 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.48155842 eV
+  energy  without entropy=      -140.48055842  energy(sigma->0) =      -140.48105842
+---------------------------------------- Ionic step 35 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.48331337 eV
+  energy  without entropy=      -140.48231337  energy(sigma->0) =      -140.48281337
+---------------------------------------- Ionic step 36 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.48490131 eV
+  energy  without entropy=      -140.48390131  energy(sigma->0) =      -140.48440131
+---------------------------------------- Ionic step 37 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.48633814 eV
+  energy  without entropy=      -140.48533814  energy(sigma->0) =      -140.48583814
+---------------------------------------- Ionic step 38 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.48763824 eV
+  energy  without entropy=      -140.48663824  energy(sigma->0) =      -140.48713824
+---------------------------------------- Ionic step 39 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.48881461 eV
+  energy  without entropy=      -140.48781461  energy(sigma->0) =      -140.48831461
+---------------------------------------- Ionic step 40 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+ POSITION                                       TOTAL-FORCE (eV/Angst)
+ -----------------------------------------------------------------------------------
+      0.00000      0.00000      6.75000         0.025024     -0.012374      0.018271
+      3.15000      0.00000      6.75000        -0.026477     -0.014522     -0.015270
+      0.00000      3.15000      6.75000        -0.047834      0.019479     -0.018776
+      0.00000      0.00000      9.95000         0.000500      0.019230      0.017861
+      0.00000      0.00000      3.55000         0.026615     -0.003939     -0.016932
+      3.15000      3.15000     11.82000        -0.003189     -0.067493     -0.057884
+      3.15000      3.15000      1.68000        -0.052908     -0.039890      0.015991
+      3.15000      3.15000     10.35000        -0.036219     -0.015127      0.051969
+      3.15000      3.15000      3.15000        -0.014251      0.029501     -0.037345
+      4.11000      3.15000     10.01000        -0.008218     -0.038001     -0.013561
+      4.05391      3.64381     12.18000         0.033612     -0.069093      0.017377
+      2.67000      3.98138     10.01000         0.009509     -0.023766     -0.057842
+      2.27039      3.68590     12.18000         0.002885     -0.021180      0.009307
+      2.67000      2.31862     10.01000         0.000874      0.064071     -0.009574
+      3.12570      2.12029     12.18000        -0.040940      0.007171      0.008800
+      4.11000      3.15000      3.49000         0.054368      0.033404      0.014275
+      4.05391      3.64381      1.32000         0.058532     -0.047551     -0.025590
+      2.67000      3.98138      3.49000        -0.037063     -0.015592     -0.055067
+      2.27039      3.68590      1.32000         0.025406     -0.008889     -0.058832
+      2.67000      2.31862      3.49000        -0.040623      0.012541      0.033525
+      3.12570      2.12029      1.32000         0.079869      0.116554      0.016576
+ -----------------------------------------------------------------------------------
+    total drift:                                0.000001     -0.000001      0.000002
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.48987904 eV
+  energy  without entropy=      -140.48887904  energy(sigma->0) =      -140.48937904

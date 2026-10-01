@@ -1,0 +1,10 @@
+ vasp.6.4.1 synthetic OUTCAR (written by VASP_tools/examples/synthetic_vasp.py)
+   number of dos      NEDOS =    301   number of ions     NIONS =     21
+   NBANDS=      96
+   NSW    =      0    number of steps for IOM
+   IBRION =     -1    ionic relax: 0-MD 1-quasi-New 2-CG
+   ISIF   =      2    stress and relaxation
+   EDIFFG = -2.0E-02   stopping-criterion for IOM
+   EDIFF  = 0.1E-05   stopping-criterion for ELM
+   LSORBIT =      F    spin-orbit coupling
+  volume of cell :      1190.70

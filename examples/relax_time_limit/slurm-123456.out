@@ -1,0 +1,3 @@
+ running on  128 total cores
+ ...
+slurmstepd: error: *** JOB 123456 ON node042 CANCELLED AT 2026-10-01T09:59:59 DUE TO TIME LIMIT ***

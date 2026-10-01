@@ -1,0 +1,22 @@
+ vasp.6.4.1 synthetic OUTCAR (written by VASP_tools/examples/synthetic_vasp.py)
+   number of dos      NEDOS =    301   number of ions     NIONS =     21
+   NBANDS=      20
+   NSW    =      0    number of steps for IOM
+   IBRION =     -1    ionic relax: 0-MD 1-quasi-New 2-CG
+   ISIF   =      2    stress and relaxation
+   EDIFFG = -2.0E-02   stopping-criterion for IOM
+   EDIFF  = 0.1E-05   stopping-criterion for ELM
+   LSORBIT =      F    spin-orbit coupling
+  volume of cell :      1190.70
+---------------------------------------- Ionic step 1 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -3.7000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =        0.50 kB  Pullay stress =        0.00 kB
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -123.45678900 eV
+  energy  without entropy=      -123.45578900  energy(sigma->0) =      -123.45628900
+
+                  General timing and accounting informations for this job:
+                  ========================================================
+                            Elapsed time (sec):     1234.500
+                      Voluntary context switches:        1234

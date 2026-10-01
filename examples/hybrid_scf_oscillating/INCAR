@@ -1,0 +1,16 @@
+SYSTEM  = toy slab, PBE0 single point
+ENCUT   = 500
+PREC    = Accurate
+EDIFF   = 1E-6
+NELM    = 60
+ISMEAR  = 0
+SIGMA   = 0.01
+LHFCALC = .TRUE.
+AEXX    = 0.25
+ALGO    = Normal
+AMIX    = 0.1
+BMIX    = 0.0001     ! linear mixing: Kerker preconditioning switched off
+LVHAR   = .TRUE.
+LORBIT  = 11
+NSW     = 0
+IBRION  = -1

@@ -1,0 +1,89 @@
+ vasp.6.4.1 synthetic OUTCAR (written by VASP_tools/examples/synthetic_vasp.py)
+   number of dos      NEDOS =    301   number of ions     NIONS =     21
+   NBANDS=      20
+   NSW    =    150    number of steps for IOM
+   IBRION =      2    ionic relax: 0-MD 1-quasi-New 2-CG
+   ISIF   =      3    stress and relaxation
+   EDIFFG = -2.0E-02   stopping-criterion for IOM
+   EDIFF  = 0.1E-05   stopping-criterion for ELM
+   LSORBIT =      F    spin-orbit coupling
+  volume of cell :       535.81
+---------------------------------------- Ionic step 1 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =       -0.80 kB  Pullay stress =        0.00 kB
+  volume of cell :       535.81
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.00000000 eV
+  energy  without entropy=      -139.99900000  energy(sigma->0) =      -139.99950000
+---------------------------------------- Ionic step 2 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =       -0.80 kB  Pullay stress =        0.00 kB
+  volume of cell :       540.32
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.50569645 eV
+  energy  without entropy=      -140.50469645  energy(sigma->0) =      -140.50519645
+---------------------------------------- Ionic step 3 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =       -0.80 kB  Pullay stress =        0.00 kB
+  volume of cell :       544.82
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.69173177 eV
+  energy  without entropy=      -140.69073177  energy(sigma->0) =      -140.69123177
+---------------------------------------- Ionic step 4 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =       -0.80 kB  Pullay stress =        0.00 kB
+  volume of cell :       549.32
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.76017035 eV
+  energy  without entropy=      -140.75917035  energy(sigma->0) =      -140.75967035
+---------------------------------------- Ionic step 5 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =       -0.80 kB  Pullay stress =        0.00 kB
+  volume of cell :       553.82
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.78534749 eV
+  energy  without entropy=      -140.78434749  energy(sigma->0) =      -140.78484749
+---------------------------------------- Ionic step 6 ----------------------------------------
+------------------------ aborting loop because EDIFF is reached ----------------------------------------
+ E-fermi :   -2.1000     XC(G=0):  -1.0000     alpha+bet : -1.0000
+  external pressure =       -0.80 kB  Pullay stress =        0.00 kB
+  volume of cell :       558.32
+ POSITION                                       TOTAL-FORCE (eV/Angst)
+ -----------------------------------------------------------------------------------
+      0.00000      0.00000      7.03350         0.351733      0.426736      0.476008
+      3.15000      0.00000      7.03350        -0.209235     -0.277411      0.514786
+      0.00000      3.15000      7.03350        -0.114783     -0.765412     -0.679972
+      0.00000      0.00000     10.36790        -0.551671      0.298296      0.085455
+      0.00000      0.00000      3.69910         0.414291     -0.256352      0.095124
+      3.15000      3.15000     12.31644        -0.003437      0.001475     -0.003836
+      3.15000      3.15000      1.75056         0.003514     -0.000200     -0.000739
+      3.15000      3.15000     10.78470        -0.002724      0.004890     -0.000618
+      3.15000      3.15000      3.28230        -0.001713     -0.001409      0.002129
+      4.11000      3.15000     10.43042         0.001462      0.001651      0.001723
+      4.05391      3.64381     12.69156         0.008567     -0.001626     -0.002049
+      2.67000      3.98138     10.43042        -0.003255      0.002464      0.004516
+      2.27039      3.68590     12.69156        -0.000456     -0.003361     -0.003298
+      2.67000      2.31862     10.43042         0.002602      0.002973      0.002173
+      3.12570      2.12029     12.69156        -0.002662      0.000929      0.000467
+      4.11000      3.15000      3.63658         0.000875      0.003486      0.000894
+      4.05391      3.64381      1.37544         0.002716      0.000270      0.001156
+      2.67000      3.98138      3.63658         0.002525     -0.005829     -0.001279
+      2.27039      3.68590      1.37544        -0.001881     -0.002556     -0.001101
+      2.67000      2.31862      3.63658         0.005980     -0.003463      0.003873
+      3.12570      2.12029      1.37544        -0.006731     -0.001340      0.000651
+ -----------------------------------------------------------------------------------
+    total drift:                                0.000001     -0.000001      0.000002
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  free  energy   TOTEN  =      -140.79460964 eV
+  energy  without entropy=      -140.79360964  energy(sigma->0) =      -140.79410964
+ reached required accuracy - stopping structural energy minimisation
+
+                  General timing and accounting informations for this job:
+                  ========================================================
+                            Elapsed time (sec):     1234.500
+                      Voluntary context switches:        1234

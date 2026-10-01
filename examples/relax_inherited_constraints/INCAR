@@ -1,0 +1,5 @@
+SYSTEM = toy layered cell
+ISIF = 3
+IBRION = 2
+NSW = 150
+EDIFFG = -0.02
