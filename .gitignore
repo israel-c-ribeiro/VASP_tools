@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+.ipynb_checkpoints/
+
+# heavy VASP outputs (the small synthetic ones in examples/ are kept)
+WAVECAR
+WAVEDER
+CHGCAR
+CHG
+LOCPOT
+ELFCAR
+PARCHG
+vasprun.xml
+*.h5
+POTCAR
+!examples/**/LOCPOT
+
+# files produced by the quick-start commands in the repository root
+/*.png
+/*.pdf
+/*.svg
+/*.csv
+/rescue/
+/POSCAR_*
+
+# editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

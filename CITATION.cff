@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use these tools, please cite them as below."
+title: "VASP Tools: post-processing and sanity checks for VASP, written as tutorials"
+type: software
+version: 1.0.0
+date-released: 2026-10-01
+license: MIT
+repository-code: "https://github.com/israel-c-ribeiro/VASP_tools"
+authors:
+  - family-names: Ribeiro
+    given-names: Israel C.
+    orcid: "https://orcid.org/0000-0002-5272-8752"
+    affiliation: "University of Mons (UMONS), Belgium"
+keywords:
+  - VASP
+  - density functional theory
+  - band alignment
+  - vacuum level
+  - work function
+  - hybrid perovskites
+  - slab models

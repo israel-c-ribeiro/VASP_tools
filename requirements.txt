@@ -1,0 +1,4 @@
+numpy>=1.21
+matplotlib>=3.5
+scipy>=1.7        # Slab_Whole_Molecules only
+ase>=3.22         # Slab_Whole_Molecules only
