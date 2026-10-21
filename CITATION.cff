@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use these tools, please cite them as below."
 title: "VASP Tools: post-processing and sanity checks for VASP, written as tutorials"
 type: software
-version: 1.0.0
-date-released: 2026-10-01
+version: 1.1.0
+date-released: 2026-10-21
 license: MIT
 repository-code: "https://github.com/israel-c-ribeiro/VASP_tools"
 authors:
@@ -19,3 +19,8 @@ keywords:
   - work function
   - hybrid perovskites
   - slab models
+  - band structure
+  - density of states
+  - charge density difference
+  - hydrogen bonds
+  - octahedral distortion

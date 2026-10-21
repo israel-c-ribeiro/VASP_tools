@@ -91,6 +91,19 @@ def main() -> int:
         ["diagnose", str(EX / "hybrid_scf_oscillating" / "OSZICAR"), "--ediff", "1e-6", "--nelm", "60",
          "--plot", str(IMG / "scf_oscillating.png")])
     slab_figure(IMG / "slab_whole_molecules.png")
+    load("Band_Structure_DOS/bands_dos.py").main(
+        ["--bands", str(EX / "bands_nosoc"), str(EX / "bands_soc"), "--dos", str(EX / "dos_lorbit11"),
+         "--emin", "-5", "--emax", "4.5", "-o", str(IMG / "bands_dos.png"), "--dpi", "300"])
+    load("Vacuum_Potential_Check/vacuum_check.py").main(
+        [str(EX / "vacuum_clean"), str(EX / "vacuum_residual"), "--plot", str(IMG / "vacuum_check.png")])
+    cdd = EX / "charge_difference"
+    load("Charge_Density_Difference/chgdiff.py").main(
+        [str(cdd / "AB" / "CHGCAR"), str(cdd / "A" / "CHGCAR"), str(cdd / "B" / "CHGCAR"),
+         "--no-write", "--plot", str(IMG / "charge_difference.png")])
+    load("Hydrogen_Bonds/hbonds.py").main([str(EX / "hbond_toy" / "POSCAR"), "--plot", str(IMG / "hbonds.png")])
+    load("Octahedral_Distortion/octahedra.py").main(
+        ["--compare", str(EX / "octahedra_ideal" / "POSCAR"), str(EX / "octahedra_distorted" / "POSCAR"),
+         "--plot", str(IMG / "octahedra.png")])
     print(f"figures -> {IMG}")
     return 0
 

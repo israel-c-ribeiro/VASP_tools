@@ -372,6 +372,14 @@ def main() -> int:
     write_poscar(out / "layered_bulk" / "POSCAR", *toy_slab(c=13.5, layer_z=4.3),
                  comment="toy layered hybrid bulk cell (synthetic)")
     print("layered_bulk: written")
+    # the examples of the v1.1 tools live in their own generator modules (each imports this one)
+    import synthetic_bands, synthetic_chgdiff, synthetic_hbonds, synthetic_octahedra, synthetic_vacuum
+    synthetic_bands.make_bands_example(out)
+    synthetic_vacuum.make_vacuum_examples(out)
+    synthetic_chgdiff.make_chgdiff_example(out / "charge_difference")
+    synthetic_hbonds.make_hbond_example(out / "hbond_toy")
+    synthetic_octahedra.make_octahedra_examples(out)
+    print("bands_*, dos_lorbit11, vacuum_*, charge_difference, hbond_toy, octahedra_*: written")
     return 0
 
 

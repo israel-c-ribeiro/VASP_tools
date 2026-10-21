@@ -1,7 +1,8 @@
-<h1 align="center">VASP Tools <sub><code>v1.0</code></sub></h1>
+<h1 align="center">VASP Tools <sub><code>v1.1</code></sub></h1>
 <p align="center">
   <b>Post-processing and sanity checks for VASP, written as tutorials.</b><br>
   Absolute band alignment · potential profiles · run diagnostics · constraints · hybrid slabs · SCF rescue<br>
+  Band structure + DOS · vacuum quality · charge-density difference · hydrogen bonds · octahedral distortion<br>
   Every tool is one self-contained Python file: copy it to the cluster and run it.
 </p>
 
@@ -22,7 +23,8 @@ A DFT calculation is only as good as the checks around it. These scripts grew ou
 surfaces and layered hybrid perovskites, and each one answers a question that, left unasked, has cost
 real CPU-hours: *did the run converge, or did it only finish? Were some atoms still fixed by flags
 copied from an old CONTCAR? Did my slab cut a molecule in half? Why does my hybrid-functional SCF
-oscillate? Where is the VBM on an absolute scale?*
+oscillate? Where is the VBM on an absolute scale? Is the vacuum potential clean enough to be that
+scale? Where did the electrons go when the two fragments met?*
 
 Each folder is a small **tutorial**: the physics in a few lines, the INCAR settings, a worked example
 on synthetic data with a known answer, the pitfalls, and references.
@@ -31,17 +33,28 @@ on synthetic data with a known answer, the pitfalls, and references.
 
 | Tool | Question it answers | Needs |
 |---|---|---|
+| ***Runs and set-up*** | | |
 | [**Run_Diagnostics**](Run_Diagnostics) | Did my run really work? SCF of every ionic step, forces on free atoms, constraints, cell change, known VASP/Slurm errors with fixes | numpy |
 | [**Selective_Dynamics**](Selective_Dynamics) | Which atoms are fixed, and what forces remain on them? Release or set constraints by height, element or index | numpy |
 | [**Slab_Whole_Molecules**](Slab_Whole_Molecules) | How do I cut a slab from a layered hybrid crystal without splitting the molecules? | numpy, scipy, ase |
 | [**SCF_Rescue_Hybrid**](SCF_Rescue_Hybrid) | Why does my HSE06/PBE0 SCF oscillate, and how do I make it converge? | numpy (matplotlib for plots) |
+| ***Electronic structure*** | | |
 | [**LOCPOT_Planar_Average**](LOCPOT_Planar_Average) | Planar/macroscopic potential, vacuum level, work function, dipole check | numpy, matplotlib |
+| [**Vacuum_Potential_Check**](Vacuum_Potential_Check) | Is the vacuum potential converged enough to be a reference? Line + long-wavelength cosine fit in the vacuum, ramp, dipole step, INCAR mixing settings, OK/WARN/BAD for one run or a campaign | numpy (matplotlib for plots) |
 | [**Band_Alignment_Vacuum**](Band_Alignment_Vacuum) | VBM/CBM on the vacuum scale (IP, EA), fragment-resolved edges and type I/II/III alignment, for one run or a campaign | numpy (matplotlib for plots) |
+| [**Band_Structure_DOS**](Band_Structure_DOS) | Band structure(s) next to the element/orbital-projected DOS: gap, direct or indirect, where the edges sit and which atoms make them; SOC vs no-SOC overlay, hybrid zero-weight paths | numpy, matplotlib |
+| [**Charge_Density_Difference**](Charge_Density_Difference) | Where do the electrons go when fragments A and B bind? Δρ = ρ_AB − ρ_A − ρ_B for VESTA, plane-averaged profile, charge-displacement curve ΔQ(z), compatibility checks; streams multi-GB CHGCARs | numpy (matplotlib for plots) |
+| ***Structure*** | | |
+| [**Octahedral_Distortion**](Octahedral_Distortion) | How distorted are my BX6 octahedra, and how did a relaxation change them? Bond lengths, Baur index, quadratic elongation, bond-angle variance, B–X–B angles, axial tilts | numpy (matplotlib for plots) |
+| [**Hydrogen_Bonds**](Hydrogen_Bonds) | Which D–H···A hydrogen bonds does my structure have? Counts under several cutoffs with the angle criterion, per donor group, across periodic boundaries, terminal vs bridging acceptors, batch mode | numpy (matplotlib for plots) |
+| ***Small utilities*** | | |
 | [MAGMOM_Vasp](MAGMOM_Vasp) | Final magnetic moments of an OUTCAR as a `MAGMOM` line for the next run | — |
 | [Vacuum_Slab_Control](Vacuum_Slab_Control) | Centre a slab and add vacuum with ASE (inorganic slabs) | ase |
 
 <p align="center"><img src="docs/img/band_alignment.png" width="360" alt="Band alignment of two synthetic slabs"/>
 <img src="docs/img/planar_average.png" width="470" alt="Planar-averaged potential of a synthetic slab"/></p>
+<p align="center"><img src="docs/img/bands_dos.png" width="430" alt="Band structure and projected DOS of a synthetic layer"/>
+<img src="docs/img/charge_difference.png" width="400" alt="Charge-displacement curve of a synthetic pair of fragments"/></p>
 
 ## Suggested learning path
 
@@ -50,7 +63,14 @@ on synthetic data with a known answer, the pitfalls, and references.
 3. **[Slab_Whole_Molecules](Slab_Whole_Molecules)** — build a correct slab.
 4. **[SCF_Rescue_Hybrid](SCF_Rescue_Hybrid)** — converge it with a hybrid functional.
 5. **[LOCPOT_Planar_Average](LOCPOT_Planar_Average)** — check the vacuum and read the vacuum level.
-6. **[Band_Alignment_Vacuum](Band_Alignment_Vacuum)** — put every band edge on an absolute scale.
+6. **[Vacuum_Potential_Check](Vacuum_Potential_Check)** — make sure that vacuum level is converged.
+7. **[Band_Alignment_Vacuum](Band_Alignment_Vacuum)** — put every band edge on an absolute scale.
+8. **[Band_Structure_DOS](Band_Structure_DOS)** — see the dispersion and which atoms make each edge.
+9. **[Charge_Density_Difference](Charge_Density_Difference)** — see where the charge moves at the interface.
+
+The two structure tools, **[Octahedral_Distortion](Octahedral_Distortion)** and
+**[Hydrogen_Bonds](Hydrogen_Bonds)**, need only a POSCAR/CONTCAR and fit anywhere in this path,
+for example to compare a structure before and after a relaxation.
 
 ## Installation
 
@@ -74,6 +94,14 @@ python Band_Alignment_Vacuum/band_alignment.py "examples/synthetic_slab*" \
        --fragment Pb,I --labels inorganic,organic --plot levels.png
 python LOCPOT_Planar_Average/planar_average.py examples/synthetic_slab/LOCPOT --plot potential.png
 python SCF_Rescue_Hybrid/scf_rescue.py diagnose examples/hybrid_scf_oscillating/OSZICAR --ediff 1e-6
+python Vacuum_Potential_Check/vacuum_check.py "examples/vacuum_*"
+python Band_Structure_DOS/bands_dos.py --bands examples/bands_nosoc examples/bands_soc \
+       --dos examples/dos_lorbit11 -o bands_dos.png
+python Charge_Density_Difference/chgdiff.py examples/charge_difference/AB/CHGCAR \
+       examples/charge_difference/A/CHGCAR examples/charge_difference/B/CHGCAR --plot cdd.png
+python Hydrogen_Bonds/hbonds.py examples/hbond_toy/POSCAR
+python Octahedral_Distortion/octahedra.py --compare examples/octahedra_ideal/POSCAR \
+       examples/octahedra_distorted/POSCAR
 ```
 
 On Linux/macOS shells quote the glob patterns as above; on Windows the scripts expand them themselves.
@@ -88,7 +116,7 @@ On Linux/macOS shells quote the glob patterns as above; on Windows the scripts e
   [`examples/synthetic_vasp.py`](examples/synthetic_vasp.py), and the tests check that the tools
   recover the values put in.
 - **Real formats.** VASP 5.4 and 6.x outputs; collinear, spin-polarized and non-collinear (SOC) runs;
-  the four-block LOCPOT of non-collinear calculations.
+  the four-block LOCPOT of non-collinear calculations; multi-GB LOCPOT and CHGCAR files are streamed.
 - **Tested** on Linux and Windows, Python 3.10–3.12, in continuous integration.
 
 ## Repository layout
@@ -96,14 +124,19 @@ On Linux/macOS shells quote the glob patterns as above; on Windows the scripts e
 ```text
 VASP_tools/
 ├── Band_Alignment_Vacuum/     band_alignment.py   + README (tutorial)
+├── Band_Structure_DOS/        bands_dos.py        + README
+├── Charge_Density_Difference/ chgdiff.py          + README
+├── Hydrogen_Bonds/            hbonds.py           + README
 ├── LOCPOT_Planar_Average/     planar_average.py   + README
+├── Octahedral_Distortion/     octahedra.py        + README
+├── Vacuum_Potential_Check/    vacuum_check.py     + README
 ├── Run_Diagnostics/           vasp_diagnose.py    + README
 ├── Selective_Dynamics/        sd_tool.py          + README
 ├── Slab_Whole_Molecules/      make_slab.py        + README
 ├── SCF_Rescue_Hybrid/         scf_rescue.py       + README
 ├── MAGMOM_Vasp/               magmom_input.py     + README
 ├── Vacuum_Slab_Control/       center_vacum.py     + README
-├── examples/                  synthetic VASP runs with known answers + their generator
+├── examples/                  synthetic VASP runs with known answers + their generators
 ├── docs/                      make_figures.py and the figures used in the READMEs
 ├── tests/                     pytest suite (runs on the synthetic examples)
 └── .github/workflows/         continuous integration
