@@ -19,6 +19,7 @@ vasprun.xml
 *.h5
 POTCAR
 !examples/**/LOCPOT
+!examples/**/CHGCAR
 
 # files produced by the quick-start commands in the repository root
 /*.png
@@ -27,6 +28,8 @@ POTCAR
 /*.csv
 /rescue/
 /POSCAR_*
+/CHGDIFF.vasp
+/*.cube
 
 # editors and OS
 .vscode/
