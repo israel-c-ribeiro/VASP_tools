@@ -1,0 +1,7 @@
+SYSTEM = toy DOS (synthetic)
+GGA = PE
+IVDW = 11
+ISMEAR = -5
+LORBIT = 11
+NEDOS = 401
+ISPIN = 1

@@ -1,0 +1,9 @@
+SYSTEM = toy band structure (synthetic)
+LHFCALC = .TRUE.
+HFSCREEN = 0.2
+AEXX = 0.25
+ALGO = Normal
+ISMEAR = 0
+SIGMA = 0.01
+LSORBIT = .TRUE.
+SAXIS = 0 0 1

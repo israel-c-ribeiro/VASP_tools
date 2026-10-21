@@ -1,0 +1,9 @@
+SYSTEM = toy band structure (synthetic)
+ICHARG = 11
+GGA = PE
+IVDW = 11
+ISMEAR = 0
+SIGMA = 0.01
+LORBIT = 11
+LSORBIT = .TRUE.
+SAXIS = 0 0 1
