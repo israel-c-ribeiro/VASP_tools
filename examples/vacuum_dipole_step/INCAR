@@ -1,0 +1,9 @@
+SYSTEM  = toy slab, dipole-corrected (synthetic)
+ENCUT   = 400
+ISMEAR  = 0 ; SIGMA = 0.02
+ALGO    = Normal
+EDIFF   = 1E-6
+NELM    = 100
+IDIPOL  = 3
+LDIPOL  = .TRUE.
+LVHAR   = .TRUE.

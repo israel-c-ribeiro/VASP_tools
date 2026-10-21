@@ -1,0 +1,7 @@
+SYSTEM  = toy slab (synthetic)
+ENCUT   = 400
+ISMEAR  = 0 ; SIGMA = 0.02
+ALGO    = Normal
+EDIFF   = 1E-6
+NELM    = 100
+LVHAR   = .TRUE.

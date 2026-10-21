@@ -1,0 +1,8 @@
+SYSTEM  = toy slab, SCF stopped early (synthetic)
+ENCUT   = 400
+ISMEAR  = 0 ; SIGMA = 0.02
+LSORBIT = .TRUE.
+ALGO    = Normal
+EDIFF   = 1E-3     ! loose
+NELM    = 12
+LVHAR   = .TRUE.
